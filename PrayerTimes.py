@@ -419,14 +419,3 @@ class PrayTimes():
 #---------------------- prayTimes Object -----------------------
 
 prayTimes = PrayTimes()
-
-
-#-------------------------- Test Code --------------------------
-
-# sample code to run in standalone mode only
-if __name__ == "__main__":
-	from datetime import date
-	print('Prayer Times for today in Waterloo/Canada\n'+ ('='* 41))
-	times = prayTimes.getTimes(date.today(), (43, -80), -5);
-	for i in ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight']:
-		print(i+ ': '+ times[i.lower()])
